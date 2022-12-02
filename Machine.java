@@ -26,15 +26,17 @@ public class Machine {
         this.items[row][spot] = new Item(item);
     }
 
-    /**
-     * Function name – dispense
-     * @param row (int)
-     * @param spot (int)
-     * @return (boolean)
-     * 
-     * Inside the function:
-     *  1. Checks if the requested item has a quantity bigger than 0.
-     *      • if so: decreases its quantity by one and returns true.
-     *      • otherwise: returns false.
-     */
+    // 2.4 dispense function
+        // check if requested item has a quantity > 0
+            // if yes --> decrease quantity by 1 and returns true
+            // else no --> returns false
+    
+    public boolean dispense(int row, int spot) {
+        if (this.items[row][spot].getQuantity() > 0) {
+            this.items[row][spot].setQuantity(this.items[row][spot].getQuantity() - 1);
+            return true;
+        } else {
+            return false;
+        }
+    }
 }
