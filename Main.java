@@ -14,11 +14,13 @@ public class Main {
 
         // 2.3. create machine object of Machine class
         Machine machine = new Machine(items);
-        Item item = machine.getItem(2,1);
-        item.setPrice(2.99);
-        machine.setItem(item, 2, 1);
 
-        System.out.println(machine.getItem(2,1));
+        // 2.5 selling 2 quantity of pepsi 
+        machine.dispense(0,0);
+        machine.dispense(0,0);
+
+        // 2.6 output: 1 quantity
+        System.out.println(machine.getItem(0,0));
 
         
     }
