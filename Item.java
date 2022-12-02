@@ -1,24 +1,25 @@
 public class Item {
     
+    // 1. add fields
     private String name;
     private String price;
     private int quantity;
 
-    // 1. Create Constructor
+    // 2. The Big 3 - Constructor
     public Item(String name, String price, int quantity) {
         this.name = name;
         this.price = price;
         this.quantity = quantity;
     }
 
-    // 4. copy constructor
+    // 3. copy constructor
     public Item (Item source) {
         this.name = source.name;
         this.price = source.price;
         this.quantity = source.quantity;
     }
 
-    // 2. get method
+    // 2. The Big 3 - get method
     public String getName() {
         return this.name;
     }
@@ -31,7 +32,7 @@ public class Item {
         return this.quantity;
     }
 
-    // 3. set method
+    // 2. The Big 3 - set method
     public void setName(String name) {
         this.name = name;
     }
@@ -43,5 +44,12 @@ public class Item {
     public void setQuantity(int quantity) {
         this.quantity = quantity;
     }
+
+    // 4. toString Method
+    public String toString() {
+        return name + ": " + price + " (" + quantity + ")";
+    }
+
+
 
 }
