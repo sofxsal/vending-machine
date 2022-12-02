@@ -11,6 +11,13 @@ public class Item {
         this.quantity = quantity;
     }
 
+    // 4. copy constructor
+    public Item (Item source) {
+        this.name = source.name;
+        this.price = source.price;
+        this.quantity = source.quantity;
+    }
+
     // 2. get method
     public String getName() {
         return this.name;
