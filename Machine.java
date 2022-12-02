@@ -1,7 +1,11 @@
 public class Machine {
     
-    
-    
+    // 2.1 add fields
+    private String[][] name;
+    private double[][] price;
+    private int[][] quantity;
+
+
     /**
      * Function name – dispense
      * @param row (int)

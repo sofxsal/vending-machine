@@ -2,11 +2,11 @@ public class Item {
     
     // 1. add fields
     private String name;
-    private String price;
+    private double price;
     private int quantity;
 
     // 2. The Big 3 - Constructor
-    public Item(String name, String price, int quantity) {
+    public Item(String name, double price, int quantity) {
         this.name = name;
         this.price = price;
         this.quantity = quantity;
@@ -24,7 +24,7 @@ public class Item {
         return this.name;
     }
 
-    public String getPrice() {
+    public double getPrice() {
         return this.price;
     }
 
@@ -37,7 +37,7 @@ public class Item {
         this.name = name;
     }
 
-    public void setPrice(String price) {
+    public void setPrice(double price) {
         this.price = price;
     }
 

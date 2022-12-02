@@ -13,7 +13,7 @@ public class Main {
         */
         
         // 5. create item object of Item class
-        Item item = new Item("Pepsi", "1.99", 3);
+        Item item = new Item("Pepsi", 1.99, 3);
 
         System.out.println(item);
     }
