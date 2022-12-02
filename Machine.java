@@ -21,7 +21,7 @@ public class Machine {
         return new Item(items[row][spot]);
     }
 
-    // 3. The Big 3 - set method
+    // 2. The Big 3 - set method
     public void setItem(Item item, int row, int spot) {
         this.items[row][spot] = new Item(item);
     }
