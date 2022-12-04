@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -5,6 +7,14 @@ public class Main {
         System.out.println("\t             WELCOME TO JAVA DRINKS!            ");
         System.out.println("\t************************************************");
         
+        Scanner scan = new Scanner(System.in);
+
+        System.out.println("Pick a row: ");
+        int row = scan.nextInt();
+
+        System.out.println("Pick a spot in the row: ");
+        int spot = scan.nextInt();
+
         Item[][] items = new Item[][] {
             { new Item("Pepsi", 1.99, 3) , new Item(" Fresca", 1.49, 3), new Item(" Brisk", 2.49, 2) },
             { new Item("Fanta", 1.99, 2) , new Item(" Barq's", 1.49, 2), new Item(" A & W", 2.49, 3) },
@@ -15,9 +25,10 @@ public class Main {
         // 2.3. create machine object of Machine class
         Machine machine = new Machine(items);
 
-        System.out.println(machine);
+        machine.dispense(row, spot);
+        System.out.println("\n" + machine);
        
-
+        scan.close();
         
     }
 }
