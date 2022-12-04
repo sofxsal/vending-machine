@@ -39,4 +39,29 @@ public class Machine {
             return false;
         }
     }
+
+
+    // 3.1 add toString method
+    public String toString() {
+        String temp = "";
+
+        for (int i = 0; i < items.length; i++) {
+            for (int j = 0; j < items[i].length; j++) {
+                temp += this.items[i][j].toString();
+            }
+        }
+
+        return temp;
+    }
 }
+
+// String temp = "";
+// for (int i = 0; i < this.cars.length; i++) {
+//     temp += "Parking Spot: " + i + "\n";
+//     if (this.cars[i] == null) {
+//         temp += "Empty\n";
+//     } else {
+//         temp += this.cars[i].toString() + "\n";
+//     }
+// }
+// return temp;
