@@ -53,7 +53,7 @@ public class Machine {
             }
             temp += "\n\n";
         }
-
+        temp += "\t*************************************************";
         return temp;
     }
 }
