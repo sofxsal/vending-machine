@@ -46,9 +46,12 @@ public class Machine {
         String temp = "";
 
         for (int i = 0; i < items.length; i++) {
+            temp += "\t";
             for (int j = 0; j < items[i].length; j++) {
+                
                 temp += this.items[i][j].toString();
             }
+            temp += "\n\n";
         }
 
         return temp;
