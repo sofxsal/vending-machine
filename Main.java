@@ -20,17 +20,20 @@ public class Main {
         // 4. create scanner
         Scanner scan = new Scanner(System.in);
 
-        System.out.println("Pick a row: ");
-        int row = scan.nextInt();
+        // 4.3 create a while loop
 
-        System.out.println("Pick a spot in the row: ");
-        int spot = scan.nextInt();
+        while (true) {
+            System.out.println("Pick a row: ");
+            int row = scan.nextInt();
 
-         // 4.2 dispense the drink
-        machine.dispense(row, spot);
-        System.out.println("\n" + machine);
-       
-        scan.close();
+            System.out.println("Pick a spot in the row: ");
+            int spot = scan.nextInt();
+
+            // 4.2 dispense the drink
+            machine.dispense(row, spot);
+            System.out.println("\n" + machine);
+        }
+
         
     }
 }
